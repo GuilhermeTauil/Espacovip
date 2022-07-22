@@ -10,6 +10,7 @@ import Unhas from "./components/unhas";
 import Depilacao from "./components/Depilacao";
 import Footer from "./components/footer";
 import Link from "next/link";
+import Designer from "./components/designer";
 
 export default function Home() {
   return (
@@ -27,7 +28,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <div className={styles.banner} id="inicio">
-        <Image src="/2.jpg" layout="responsive" width={1000} height={600} />
+        <Image src="/2.jpg" layout="responsive" width={1000} height={1000} />
       </div>
       <main className={styles.main}>
         <div className={styles.content}>
@@ -47,59 +48,72 @@ export default function Home() {
               <Cabelo />
             </Tab>
             <Tab eventKey="profile4" title="Designer de sombrancelhas">
-              <Depilacao />
+              <Designer />
             </Tab>
           </Tabs>
         </div>
-
-        <div className={styles.about} id="Sobre">
-          <div className={styles.aboutCard}>
-            <h2>Sobre</h2>
-            <p>
-              Occaecat sint anim eiusmod laboris enim labore proident cupidatat
-              enim velit duis irure. Ipsum ut cupidatat duis exercitation est.
-              Sit qui magna non eu sunt duis est duis enim excepteur amet.
-              Officia et aliquip mollit id veniam cillum sint. Consequat qui
-              Lorem sunt eiusmod nisi. Velit do sint consequat quis
-              reprehenderit eiusmod velit deserunt aliqua.
-            </p>
+        <div className={styles.back}>
+          <div className={styles.about} id="Sobre">
+            <div className={styles.aboutCard}>
+              <h2>Quem somos?</h2>
+              <p>
+                Espaço vip aqui ofertamos serviços de alta qualidade com
+                profissionais de excelente capacitação. Trabalhamos unidos para
+                lhe proporcionar conforto e a beleza que vc procura. O nosso
+                objetivo é que nossos clientes saiam felizes com o cuidado que
+                lhe foi ofertado e satisfeito com o resultado desejado.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className={styles.typ}>
-          <div className={styles.rota}>
-            <div className={styles.rotaCard}>
-              <h2>Como chegar?</h2>
+          <div className={styles.typ}>
+            <div className={styles.rota}>
+              <div className={styles.rotaCard}>
+                <h2>Como chegar?</h2>
 
-              <Link href="https://www.google.com.br/maps/place/R.+Maria+Gorete,+04+-+Cidade+Nova,+Iguaba+Grande+-+RJ,+28960-000/@-22.835481,-42.2103182,17z/data=!3m1!4b1!4m5!3m4!1s0x971291b4b47029:0x186a36f0d2f89d29!8m2!3d-22.835486!4d-42.2081242">
-                <p>
-                  RUA MARIA GORETE 04 <strong> CIDADE NOVA</strong> , IGUABA
-                  GRANDE.
-                  <img src="/maps_logo.png" className={styles.GitImg} />
-                </p>
-              </Link>
+                <Link href="https://www.google.com.br/maps/place/R.+Maria+Gorete,+04+-+Cidade+Nova,+Iguaba+Grande+-+RJ,+28960-000/@-22.835481,-42.2103182,17z/data=!3m1!4b1!4m5!3m4!1s0x971291b4b47029:0x186a36f0d2f89d29!8m2!3d-22.835486!4d-42.2081242">
+                  <p>
+                    RUA MARIA GORETE 04 <strong> CIDADE NOVA</strong> , IGUABA
+                    GRANDE.
+                    <img src="/maps_logo.png" className={styles.GitImg} />
+                  </p>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className={styles.row}>
+            <div className={styles.column}>
+              <div className={styles.Social}>
+                <div className={styles.SocialCard}>
+                  <h2>Já segue a gente?</h2>
+                  <Link href="https://www.google.com.br/maps/place/R.+Maria+Gorete,+04+-+Cidade+Nova,+Iguaba+Grande+-+RJ,+28960-000/@-22.835481,-42.2103182,17z/data=!3m1!4b1!4m5!3m4!1s0x971291b4b47029:0x186a36f0d2f89d29!8m2!3d-22.835486!4d-42.2081242">
+                    <p>
+                      Seguir -
+                      <img
+                        src="/instagram_ready.png"
+                        className={styles.instaImg}
+                      />
+                    </p>
+                  </Link>
+                  <h2>Deseja marcar um horário?</h2>
+                  <Link href="https://alvo.chat/7M5">
+                    <p>
+                      acesse -
+                      <img
+                        src="/whattsapp_logo.png"
+                        className={styles.GitImg}
+                      />
+                    </p>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className={styles.column} id="cl">
+              <Slide />
             </div>
           </div>
         </div>
-        <div className={styles.Social}>
-          <div className={styles.SocialCard}>
-            <h2>Já segue a gente?</h2>
-            <Link href="https://www.google.com.br/maps/place/R.+Maria+Gorete,+04+-+Cidade+Nova,+Iguaba+Grande+-+RJ,+28960-000/@-22.835481,-42.2103182,17z/data=!3m1!4b1!4m5!3m4!1s0x971291b4b47029:0x186a36f0d2f89d29!8m2!3d-22.835486!4d-42.2081242">
-              <p>
-                Seguir -
-                <img src="/instagram_ready.png" className={styles.instaImg} />
-              </p>
-            </Link>
-            <h2>Deseja marcar um horário?</h2>
-            <Link href="https://alvo.chat/7M5">
-              <p>
-                acesse -
-                <img src="/whattsapp_logo.png" className={styles.GitImg} />
-              </p>
-            </Link>
-          </div>
-        </div>
       </main>
-      <Slide />
+
       <Footer />
     </div>
   );
