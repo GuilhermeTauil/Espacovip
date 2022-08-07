@@ -38,22 +38,6 @@ function slide() {
             height={600}
           />
         </Carousel.Item>
-        <Carousel.Item>
-          <Image
-            src="/unhas5.jpeg"
-            layout="responsive"
-            width={1000}
-            height={600}
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <Image
-            src="/unhas4.jpeg"
-            layout="responsive"
-            width={1000}
-            height={600}
-          />
-        </Carousel.Item>
       </Carousel>
     </div>
   );
