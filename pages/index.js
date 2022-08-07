@@ -28,7 +28,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <div className={styles.banner} id="inicio">
-        <Image src="/2.jpg" layout="responsive" width={1000} height={1000} />
+        <Image src="/2.jpg" layout="responsive" width={1000} height={500} />
       </div>
       <main className={styles.main}>
         <div className={styles.content}>
